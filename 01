@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Charity Water Landing Page</title>
+<link rel="stylesheet" href="styles.css">
+
+<style>
+  body, html { margin:0; padding:0; font-family:'Montserrat','Nunito',Arial,sans-serif; overflow-x:hidden; }
+  a{text-decoration:none;}
+  header { position:fixed; top:0; left:0; width:100%; display:flex; justify-content:space-between; align-items:center; padding:20px 50px; background-color:#8BD1CB; z-index:1000; }
+  header .logo img{width:150px;}
+  nav a{margin-left:20px; font-weight:bold; color:#2E9DF7;}
+  nav a:hover{color:#F5402C;}
+  .hero { position:relative; height:100vh; margin-top:80px; display:flex; flex-direction:column; justify-content:center; align-items:center; background:url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.doamore.com%2Fcharity-water-our-clean-water-non-profit-partner%2F&psig=AOvVaw0UNvTXJtq7A5aJ3nMfKUPt&ust=1757478385615000&source=images&cd=vfe&opi=89978449&ved=2ahUKEwiExaKo68qPAxUDtYkEHU8-OK4QjRx6BAgAEBsa') no-repeat center center/cover; color:white; text-align:center; padding:20px; }
+  .hero h1{font-size:3rem; color:#FFC907; margin-bottom:20px; text-shadow:2px 2px 5px rgba(0,0,0,0.6);}
+  .hero p{font-size:1.5rem; margin-bottom:30px; text-shadow:1px 1px 3px rgba(0,0,0,0.6);}
+  .hero .cta-btn{padding:15px 40px; font-size:1.2rem; border:none; border-radius:50px; background-color:#F5402C; color:white; cursor:pointer; font-weight:bold; transition:0.3s; animation:pulse 2.5s infinite;}
+  .hero .cta-btn:hover{transform:scale(1.05); box-shadow:0 5px 15px rgba(245,64,44,0.4);}
+  .story{display:flex; justify-content:space-around; align-items:center; flex-wrap:wrap; padding:100px 50px; background-color:#fff;}
+  .story-content{flex:1; min-width:300px; max-width:600px; padding:20px;}
+  .story-content h2{color:#2E9DF7; font-size:2.5rem; margin-bottom:20px;}
+  .story-content p{font-size:1.2rem; line-height:1.6;}
+  .story-image{flex:1; min-width:300px; max-width:600px; padding:20px;}
+  .story-image img{width:100%; border-radius:15px; box-shadow:0 5px 15px rgba(0,0,0,0.2);}
+  .impact-story{padding:100px 50px; background-color:#f9f9f9; text-align:center;}
+  .impact-story h2{color:#159A48; font-size:2.5rem; margin-bottom:40px;}
+  .impact-content{display:flex; flex-direction:column; align-items:center; max-width:800px; margin:0 auto;}
+  .impact-content img{width:100%; border-radius:15px; box-shadow:0 5px 15px rgba(0,0,0,0.2); margin-bottom:20px;}
+  .impact-content p{font-size:1.2rem; line-height:1.6;}
+  .call-to-action{text-align:center; padding:100px 50px; background-color:#fff;}
+  .call-to-action h2{font-size:2.5rem; margin-bottom:20px; color:#2E9DF7;}
+  .call-to-action p{font-size:1.2rem; margin-bottom:30px;}
+  .donate-button{padding:15px 40px; font-size:1.2rem; border:none; border-radius:50px; background-color:#2E9DF7; color:white; cursor:pointer; font-weight:bold; transition:0.3s; animation:pulse 2.5s infinite;}
+  .donate-button:hover{transform:scale(1.05); box-shadow:0 5px 15px rgba(46,157,247,0.4);}
+  footer{text-align:center; padding:30px; background-color:#8BD1CB; font-size:0.9rem;}
+  @keyframes pulse{0%{transform:scale(1);box-shadow:0 0 0 rgba(245,64,44,0.7);}70%{transform:scale(1.05);box-shadow:0 0 20px rgba(245,64,44,0);}100%{transform:scale(1);box-shadow:0 0 0 rgba(245,64,44,0);}}
+  @media(max-width:1024px){.hero h1{font-size:2.2rem;}.hero p{font-size:1.2rem;}.story{flex-direction:column;text-align:center;}}
+  @media(max-width:600px){header{flex-direction:column; align-items:center;} header nav{margin-top:10px;} .hero h1{font-size:1.8rem;} .hero p{font-size:1rem;} .hero .cta-btn{width:100%;} .donate-button{width:100%;}}
+</style>
+</head>
+<body>
+    <!-- Hero Section: This is the main banner at the top of the page -->
+    <section class="hero">
+        <h1>Clean Water for Everyone</h1>
+        <p>Join us in bringing safe, clean water to communities in need.</p>
+        <button class="cta-btn">Get Involved</button>
+    </section>
+
+    <!-- Story Section: This tells the story of the nonprofit -->
+    <section class="story">
+        <div class="story-content">
+            <h2>Our Story</h2>
+            <p>The charity: water story begins with its founder, Scott Harrison, a former nightclub promoter, who, after witnessing the devastating effects of dirty water in West Africa, felt compelled to start a nonprofit. Launched in 2006, charity: water is built on the principle of transparency, directing 100% of donations to fund clean water projects while covering operating costs separately. The organization has funded over 186,000 water projects, serving more than 20.3 million people by bringing clean, safe water to communities worldwide</p>
+        </div>
+        <div class="story-image">
+            <img src="https://share.google/images/VVqkCVstqbxSXoYmY" alt="Charity Water Story">
+        </div>
+    </section>
+
+    <!-- Real-World Impact Story Section -->
+    <section class="impact-story">
+        <h2>Real Impact: Meet Amina</h2>
+        <div class="impact-content">
+            <img src="https://share.google/images/z4j9BtK6X2yEWk2uw" alt="Amina's Story">
+            <p>
+                Amina used to walk miles every day to collect water for her family. Thanks to your support, her village now has a clean water well. Amina can go to school and her family is healthier and happier.
+            </p>
+        </div>
+    </section>
+
+    <!-- Call-to-Action Section: This encourages visitors to take action -->
+    <section class="call-to-action">
+        <h2>Make a Difference</h2>
+        <p>Your support can help save lives. Every donation brings us closer to a world with clean water for all.</p>
+        <a href="#" class="donate-button">Donate Now</a>
+    </section>
+
+    <footer>
+        &copy; 2025 Charity Water. All rights reserved.
+    </footer>
+</body>
+</html>
